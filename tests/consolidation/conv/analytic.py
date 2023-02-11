@@ -26,32 +26,67 @@ def stress(y):
 step = 0.1
 y = np.arange(0,L,step)
 dy = np.ones(y.shape) * step
+y_int_0 = np.zeros(y.shape)
 y_int = np.zeros(y.shape)
 
-plt.ion()
+#plt.ion()
 plt.close("all")
 plt.figure()
 f = calculate_f(y)
 
 for i in range(0,len(dy)):
     for j in range(0,i):
+        y_int_0[i] += dy[j]
         y_int[i] += dy[j]*f[j]
 plt.plot(-stress(y),y_int,label="Analytic")
 
 
 data_dir = "./conv_files/"
 files = os.listdir(data_dir)
+numbers = re.compile("\d+")
+files.sort(key=lambda x:int(numbers.findall(x)[0]))
+data = []
+error = []
+elements = []
 plt.figure()
 print(files)
+for name in files:
+    elements.append(int(numbers.findall(name)[0]))
 for name in files:
     df = pd.read_hdf("./{}/{}".format(data_dir,name))
     min_x = df["coord_x"].min()
     ids = df["coord_x"] < min_x + 1e-5
+    data.append(df[ids])
     plt.scatter(-df["stress_yy"][ids],df["coord_y"][ids],label=name)
+plt.plot(-stress(y),y_int)
+plt.xlabel("Stress (Pa)")
+plt.ylabel("Height (m)")
+plt.legend()
+plt.ylim([0,L+5])
+
+plt.figure()
+for name,df in zip(files,data):
+    y_final = df["coord_y"]
+    mps = len(df["coord_y"])
+    v_0 = L / mps
+    y_0 = (L/(mps+1))*np.arange(1,mps+1)
+    e = np.sum(abs(stress(y_0) - df["stress_yy"]) * v_0/(L*L*rho*g))
+    error.append(e)
+    #analytic_interp = np.interp(y_final,y_int,stress)
+    plt.scatter(-df["stress_yy"],y_0,label=name)
+plt.plot(-stress(y_int_0),y_int_0)
+    
+
+
 
 plt.xlabel("Stress (Pa)")
 plt.ylabel("Height (m)")
 plt.legend()
 plt.ylim([0,L+5])
+plt.figure()
+plt.title("Conv")
+plt.plot(elements,error)
+plt.xscale("log")
+plt.yscale("log")
 plt.show()
 
