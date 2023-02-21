@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 E = 1e6
 L = 50
 g = 10
-rho = 800
+rho = 80
 
 def calculate_f(y):
     f = 1
@@ -41,7 +41,9 @@ for i in range(0,len(dy)):
 plt.plot(-stress(y),y_int,label="Analytic")
 
 
-data_dir = "./conv_files/"
+data_name = "mpm"
+
+data_dir = "./{}_conv_files/".format(data_name)
 files = os.listdir(data_dir)
 numbers = re.compile("\d+")
 files.sort(key=lambda x:int(numbers.findall(x)[0]))
@@ -55,9 +57,11 @@ for name in files:
 for name in files:
     df = pd.read_hdf("./{}/{}".format(data_dir,name))
     min_x = df["coord_x"].min()
-    ids = df["coord_x"] < min_x + 1e-5
+    #ids = df["coord_x"] < (min_x + 1e-5)
+    ids = df["coord_x"] > 0
     data.append(df[ids])
     plt.scatter(-df["stress_yy"][ids],df["coord_y"][ids],label=name)
+    print("File:{}, rms vel:{}".format(name,df["velocity_y"].abs().mean()))
 plt.plot(-stress(y),y_int)
 plt.xlabel("Stress (Pa)")
 plt.ylabel("Height (m)")
@@ -65,12 +69,14 @@ plt.legend()
 plt.ylim([0,L+5])
 
 plt.figure()
-for name,df in zip(files,data):
+for name,df,e in zip(files,data,elements):
+    h = L/e
     y_final = df["coord_y"]
     mps = len(df["coord_y"])
-    v_0 = L / mps
+    v_0 = L*h / (mps)
     y_0 = (L/(mps+1))*np.arange(1,mps+1)
-    e = np.sum(abs(stress(y_0) - df["stress_yy"]) * v_0/(L*L*rho*g))
+    #plt.plot(-stress(y_0),y_0)
+    e = np.sum(abs(stress(y_0) - df["stress_yy"]) * v_0/(L*h*L*rho*g))
     error.append(e)
     #analytic_interp = np.interp(y_final,y_int,stress)
     plt.scatter(-df["stress_yy"],y_0,label=name)
@@ -83,10 +89,18 @@ plt.xlabel("Stress (Pa)")
 plt.ylabel("Height (m)")
 plt.legend()
 plt.ylim([0,L+5])
+
+convergance = pd.DataFrame({"elements":elements,"error":error})
+convergance.to_csv("convergance_{}.csv".format(data_name))
 plt.figure()
 plt.title("Conv")
 plt.plot(elements,error)
 plt.xscale("log")
 plt.yscale("log")
+origin = np.array([2,0.01])
+size = 0.01
+points = np.array([[0,0],[1,1],[1,0],[0,0]])
+points = np.exp((points*size) + origin)
+#plt.plot(points[:,0],points[:,1])
 plt.show()
 
