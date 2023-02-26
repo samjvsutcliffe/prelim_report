@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 E = 1e6
 L = 50
 g = 10
-rho = 80
+rho = 800
 
 def calculate_f(y):
     f = 1
@@ -41,7 +41,7 @@ for i in range(0,len(dy)):
 plt.plot(-stress(y),y_int,label="Analytic")
 
 
-data_name = "mpm"
+data_name = "fs"
 
 data_dir = "./{}_conv_files/".format(data_name)
 files = os.listdir(data_dir)
@@ -94,13 +94,15 @@ convergance = pd.DataFrame({"elements":elements,"error":error})
 convergance.to_csv("convergance_{}.csv".format(data_name))
 plt.figure()
 plt.title("Conv")
-plt.plot(elements,error)
+plt.plot(elements,error,"-o")
+plt.xlabel("Elements")
+plt.ylabel("Normalised stress error")
 plt.xscale("log")
 plt.yscale("log")
 origin = np.array([2,0.01])
-size = 0.01
-points = np.array([[0,0],[1,1],[1,0],[0,0]])
-points = np.exp((points*size) + origin)
-#plt.plot(points[:,0],points[:,1])
+size = 2
+points = np.array([[1,1],[1,size],[size,1],[1,1]])
+points = (points*origin)
+plt.plot(points[:,0],points[:,1])
 plt.show()
 
