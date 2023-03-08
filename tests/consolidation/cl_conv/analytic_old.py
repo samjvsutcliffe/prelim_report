@@ -10,6 +10,7 @@ L = 50
 g = 10
 rho = 80
 
+
 def calculate_f(y):
     f = 1
     epsilon = 1
@@ -39,17 +40,9 @@ for i in range(0,len(dy)):
         y_int_0[i] += dy[j]
         y_int[i] += dy[j]*f[j]
 plt.plot(-stress(y),y_int,label="Analytic")
+plt.figure(0)
 
-
-plt.figure(10)
-origin = np.array([2,0.01])
-size = 2
-points = np.array([[1,1],[1,size],[size,1],[1,1]])
-points = (points*origin)
-plt.plot(points[:,0],points[:,1])
-#data_name = "fs"
-
-data_name = "cl-mpm"
+data_name = ""
 data_dir = "./conv_files/"
 files = os.listdir(data_dir)
 p = re.compile(".*\.csv")
@@ -59,8 +52,6 @@ files.sort(key=lambda x:int(numbers.findall(x)[0]))
 data = []
 error = []
 elements = []
-velocity = []
-plt.figure()
 print(files)
 for name in files:
     elements.append(int(numbers.findall(name)[0]))
@@ -68,32 +59,34 @@ for name in files:
     df = pd.read_csv("./{}/{}".format(data_dir,name))
     min_x = df["coord_x"].min()
     ids = df["coord_x"] < (min_x + 1e-5)
-    #ids = df["coord_x"] > 0
     data.append(df[ids])
-    plt.scatter(-df["stress_yy"][ids],df["coord_y"][ids],label=name)
-    rms_vel = df["velocity_y"].abs().mean()
-    velocity.append(rms_vel)
-    print("File:{}, rms vel:{}".format(name,rms_vel))
-plt.plot(-stress(y),y_int)
-plt.xlabel("Stress (Pa)")
-plt.ylabel("Height (m)")
-plt.legend()
-plt.ylim([0,L+5])
+    #print("File:{}, rms vel:{}".format(name,df["velocity_y"].abs().mean()))
+
+
+#plt.figure()
+#for df,name in zip(data,files):
+#    plt.scatter(-df["stress_yy"][ids],df["coord_y"][ids],label=name)
+#plt.plot(-stress(y),y_int)
+#plt.xlabel("Stress (Pa)")
+#plt.ylabel("Height (m)")
+#plt.legend()
+#plt.ylim([0,L+5])
 
 plt.figure()
+plt.title("Initial configuration")
 for name,df,e in zip(files,data,elements):
     h = L/e
     y_final = df["coord_y"]
     mps = len(df["coord_y"])
     v_0 = L*h / (mps)
     y_0 = (L/(mps+1))*np.arange(1,mps+1)
-    #y_0 = y_0.repeat(2)
     #plt.plot(-stress(y_0),y_0)
     e = np.sum(abs(stress(y_0) - df["stress_yy"]) * v_0/(L*h*L*rho*g))
     error.append(e)
     #analytic_interp = np.interp(y_final,y_int,stress)
     plt.scatter(-df["stress_yy"],y_0,label=name)
-plt.plot(-stress(y_int_0),y_int_0)
+plt.plot(-stress(y_0),y_0)
+#plt.scatter(-stress(y_0),y_0)
     
 
 
@@ -102,29 +95,27 @@ plt.xlabel("Stress (Pa)")
 plt.ylabel("Height (m)")
 plt.legend()
 plt.ylim([0,L+5])
-
 convergance = pd.DataFrame({"elements":elements,"error":error})
-convergance.to_csv("convergance_{}.csv".format(data_name))
-plt.figure(10)
+plt.figure(0)
 plt.title("Conv")
 plt.plot(elements,error,"-o",label=data_name)
+plt.legend()
 plt.xlabel("Elements")
-plt.ylabel("Normalised stress error")
+plt.ylabel("Stress error")
 plt.xscale("log")
 plt.yscale("log")
-plt.legend()
+#Linear convergance
 origin = np.array([2,0.01])
 size = 2
 points = np.array([[1,1],[1,size],[size,1],[1,1]])
 points = (points*origin)
-plt.figure(15)
-plt.title("Velocity")
-plt.plot(elements,velocity,"-o",label=data_name)
-plt.xlabel("Elements")
-plt.ylabel("Final velocity")
-plt.xscale("log")
-plt.yscale("log")
-plt.legend()
-#plt.plot(points[:,0],points[:,1])
+plt.plot(points[:,0],points[:,1])
+#Quadratic
+origin = np.array([100,0.01])
+size = 2
+points = np.array([[1,1],[1,2*size],[size,1],[1,1]])
+points = (points*origin)
+plt.plot(points[:,0],points[:,1])
 plt.show()
+
 

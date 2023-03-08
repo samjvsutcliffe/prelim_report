@@ -57,6 +57,7 @@ for data_name in ["fs","mpm"]:
     data = []
     error = []
     elements = []
+    velocity = []
     plt.figure()
     print(files)
     for name in files:
@@ -68,7 +69,9 @@ for data_name in ["fs","mpm"]:
         ids = df["coord_x"] > 0
         data.append(df[ids])
         plt.scatter(-df["stress_yy"][ids],df["coord_y"][ids],label=name)
-        print("File:{}, rms vel:{}".format(name,df["velocity_y"].abs().mean()))
+        rms_vel = df["velocity_y"].abs().mean()
+        velocity.append(rms_vel)
+        print("File:{}, rms vel:{}".format(name,rms_vel))
     plt.plot(-stress(y),y_int)
     plt.xlabel("Stress (Pa)")
     plt.ylabel("Height (m)")
@@ -111,6 +114,14 @@ for data_name in ["fs","mpm"]:
     size = 2
     points = np.array([[1,1],[1,size],[size,1],[1,1]])
     points = (points*origin)
+    plt.figure(15)
+    plt.title("Velocity")
+    plt.plot(elements,velocity,"-o",label=data_name)
+    plt.xlabel("Elements")
+    plt.ylabel("Final velocity")
+    plt.xscale("log")
+    plt.yscale("log")
+    plt.legend()
     #plt.plot(points[:,0],points[:,1])
 plt.show()
 
