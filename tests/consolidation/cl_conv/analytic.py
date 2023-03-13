@@ -67,8 +67,8 @@ for name in files:
 for name in files:
     df = pd.read_csv("./{}/{}".format(data_dir,name))
     min_x = df["coord_x"].min()
-    ids = df["coord_x"] < (min_x + 1e-5)
-    #ids = df["coord_x"] > 0
+    #ids = df["coord_x"] < (min_x + 1e-5)
+    ids = df["coord_x"] > 0
     data.append(df[ids])
     plt.scatter(-df["stress_yy"][ids],df["coord_y"][ids],label=name)
     rms_vel = df["velocity_y"].abs().mean()
@@ -84,9 +84,10 @@ plt.figure()
 for name,df,e in zip(files,data,elements):
     h = L/e
     y_final = df["coord_y"]
-    mps = len(df["coord_y"])
+    mps = len(df["coord_y"])/2
     v_0 = L*h / (mps)
     y_0 = (L/(mps+1))*np.arange(1,mps+1)
+    y_0 = np.concatenate([y_0,y_0])
     #y_0 = y_0.repeat(2)
     #plt.plot(-stress(y_0),y_0)
     e = np.sum(abs(stress(y_0) - df["stress_yy"]) * v_0/(L*h*L*rho*g))
