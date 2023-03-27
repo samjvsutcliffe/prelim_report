@@ -9,6 +9,9 @@
    id="svg5"
    inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
    sodipodi:docname="notch.svg"
+   inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\notch\notch.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -28,9 +31,9 @@
      inkscape:snap-object-midpoints="false"
      inkscape:snap-midpoints="true"
      inkscape:snap-center="true"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="1558.8169"
-     inkscape:cy="448.65925"
+     inkscape:zoom="1"
+     inkscape:cx="1220.5"
+     inkscape:cy="490.5"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="2552"
@@ -103,9 +106,12 @@
        inkscape:locked="false"
        inkscape:color="rgb(0,0,255)" />
     <sodipodi:guide
-       position="1186.5252,830"
-       orientation="1,0"
-       id="guide6133" />
+       position="797.61645,731.39636"
+       orientation="-1,0"
+       id="guide6133"
+       inkscape:label=""
+       inkscape:locked="false"
+       inkscape:color="rgb(0,0,255)" />
     <sodipodi:guide
        position="1186.5252,705"
        orientation="0,-1"
@@ -114,9 +120,187 @@
        position="1640.3361,680"
        orientation="0,-1"
        id="guide15231" />
+    <sodipodi:guide
+       position="1180,527"
+       orientation="0,-1"
+       id="guide16544" />
+    <sodipodi:guide
+       position="1271,552"
+       orientation="0,-1"
+       id="guide22566" />
+    <sodipodi:guide
+       position="777.89288,805.28903"
+       orientation="1,0"
+       id="guide36405" />
+    <sodipodi:guide
+       position="702.51059,830"
+       orientation="1,0"
+       id="guide37003" />
   </sodipodi:namedview>
   <defs
      id="defs2">
+    <marker
+       style="overflow:visible;"
+       id="Arrow2Mend"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mend"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.6) rotate(180) translate(0,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="stroke:context-stroke;fill-rule:evenodd;fill:context-stroke;stroke-width:0.62500000;stroke-linejoin:round;"
+         id="path15408" />
+    </marker>
+    <marker
+       style="overflow:visible;"
+       id="marker22641"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.4) rotate(180) translate(10,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt;"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path22639" />
+    </marker>
+    <marker
+       style="overflow:visible;"
+       id="marker22631"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.4) rotate(180) translate(10,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt;"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path22629" />
+    </marker>
+    <marker
+       style="overflow:visible;"
+       id="marker22621"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:isstock="true">
+      <path
+         transform="scale(1.1) rotate(180) translate(1,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="stroke:context-stroke;fill-rule:evenodd;fill:context-stroke;stroke-width:0.62500000;stroke-linejoin:round;"
+         id="path22619" />
+    </marker>
+    <marker
+       style="overflow:visible;"
+       id="Arrow2Lend"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:isstock="true">
+      <path
+         transform="scale(1.1) rotate(180) translate(1,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="stroke:context-stroke;fill-rule:evenodd;fill:context-stroke;stroke-width:0.62500000;stroke-linejoin:round;"
+         id="path15402" />
+    </marker>
+    <marker
+       style="overflow:visible;"
+       id="Arrow1Mend"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.4) rotate(180) translate(10,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt;"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path15390" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow2Mstart"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mstart"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.6) translate(0,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="stroke:context-stroke;fill-rule:evenodd;fill:context-stroke;stroke-width:0.62500000;stroke-linejoin:round"
+         id="path15405" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker19664"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lstart"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8) translate(12.5,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path19662" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker19654"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lstart"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8) translate(12.5,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path19652" />
+    </marker>
+    <marker
+       style="overflow:visible;"
+       id="marker19644"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8) rotate(180) translate(12.5,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt;"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path19642" />
+    </marker>
+    <marker
+       style="overflow:visible;"
+       id="marker19622"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8) rotate(180) translate(12.5,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt;"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path19620" />
+    </marker>
+    <linearGradient
+       id="linearGradient18913"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop18911" />
+    </linearGradient>
     <marker
        style="overflow:visible;"
        id="Arrow1Lend"
@@ -145,75 +329,311 @@
          d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
          id="path15381" />
     </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lend-5"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path15384-4" />
+    </marker>
   </defs>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.57539;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect34906"
+       width="1217.4894"
+       height="652.31848"
+       x="702.51062"
+       y="119.68151"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\notch\rect34906.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 739.03552,250 h 709.87978 l 0,50 h 191.4208 l 0,200 H 739.03552"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 739.03552,500 H 1640.3361 V 300 H 1448.9153 V 250 H 739.03552 v 250"
        id="path226"
-       sodipodi:nodetypes="cccccc" />
+       sodipodi:nodetypes="ccccccc"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\notch\text33970.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
        d="m 1448.9153,190 h 191.4208"
-       id="path848" />
+       id="path848"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\notch\text33970.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
        d="m 1448.9153,180 v 20"
-       id="path1077" />
+       id="path1077"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\notch\text33970.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
        d="m 1640.3361,180 v 20"
-       id="path1079" />
+       id="path1079"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\notch\text33970.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
+       style="font-style:normal;font-weight:normal;font-size:33.33333333px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
        x="1531.8914"
        y="176.19531"
-       id="text2095"><tspan
+       id="text2095"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\notch\text33970.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
          sodipodi:role="line"
          id="tspan2093"
          x="1531.8914"
          y="176.19531">L</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
-       x="1687.1567"
-       y="294.15643"
-       id="text4191"><tspan
+       style="font-style:normal;font-weight:normal;font-size:33.3333px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
+       x="1697.0563"
+       y="282.13562"
+       id="text4191"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\notch\text33970.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
          sodipodi:role="line"
          id="tspan4189"
-         x="1687.1567"
-         y="294.15643">water line</tspan></text>
-    <path
-       style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="M 1186.5252,250 V 500"
-       id="path6388" />
+         x="1697.0563"
+         y="282.13562">Water line</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
-       x="1203.4957"
-       y="390.19531"
-       id="text7470"><tspan
-         sodipodi:role="line"
-         id="tspan7468"
-         x="1203.4957"
-         y="390.19531">h</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
+       style="font-style:normal;font-weight:normal;font-size:33.3333px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
        x="1468.2072"
        y="606.69763"
-       id="text14114"><tspan
+       id="text14114"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\notch\text33970.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
          sodipodi:role="line"
          id="tspan14112"
          x="1468.2072"
-         y="606.69763">marine ice bench</tspan></text>
+         y="606.69763">Marine ice bench</tspan></text>
     <path
-       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Mend);stroke-miterlimit:4;stroke-dasharray:none"
        d="M 1601.5969,552.9575 1544.6257,400"
-       id="path15379" />
+       id="path15379"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\notch\text33970.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Mend)"
+       d="M 937.5901,598.9575 1235.8459,470.44054"
+       id="path15379-7"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\notch\text33970.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <g
+       id="g16776"
+       transform="translate(-382.38355)"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\notch\text33970.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 1180,250 V 500"
+         id="path6388" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:33.33333333px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
+         x="1197.4957"
+         y="390.19531"
+         id="text7470"><tspan
+           sodipodi:role="line"
+           id="tspan7468"
+           x="1197.4957"
+           y="390.19531">h</tspan></text>
+      <path
+         style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 1170,250 h 20"
+         id="path15947" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 1190,500 h -20"
+         id="path15949" />
+    </g>
+    <circle
+       id="path16825"
+       style="fill:none;stroke:#000000;stroke-opacity:1;marker-start:url(#Arrow2Mstart);stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none"
+       sodipodi:type="arc"
+       sodipodi:cx="1317.3451"
+       sodipodi:cy="298.99762"
+       sodipodi:rx="150"
+       sodipodi:ry="150"
+       sodipodi:start="0.60927315"
+       sodipodi:end="1.7163573"
+       sodipodi:open="true"
+       sodipodi:arc-type="arc"
+       d="M 1440.3547,384.83835 A 150,150 0 0 1 1295.588,447.41132"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\notch\text33970.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:33.3333px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
+       x="1075.5094"
+       y="386.06445"
+       id="text20364"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\notch\text33970.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan20362"
+         x="1075.5094"
+         y="386.06445">Bending moment</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#Arrow2Mend);marker-start:url(#Arrow2Mstart)"
+       d="m 1130,528 h 257"
+       id="path22601"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\notch\text33970.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:33.3333px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
+       x="1141"
+       y="586"
+       id="text24213"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\notch\text33970.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan24211"
+         x="1141"
+         y="586">Tensile stress</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
+       x="800.61646"
+       y="637"
+       id="text33970"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\notch\text33970.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         x="800.61646"
+         y="637"
+         id="tspan33972">Crevasse growth zone</tspan></text>
+    <path
+       style="fill:none;stroke:#0000ba;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 1640.3361,300 H 1920"
+       id="path34417" />
+    <ellipse
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5.90147;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path36221"
+       cx="721.89917"
+       cy="275"
+       rx="13.948437"
+       ry="13.948439" />
+    <ellipse
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5.90147;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path36221-6"
+       cx="721.89917"
+       cy="325"
+       rx="13.948437"
+       ry="13.948439" />
+    <ellipse
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5.90147;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path36221-6-7"
+       cx="721.89917"
+       cy="375"
+       rx="13.948437"
+       ry="13.948439" />
+    <ellipse
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5.90147;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path36221-6-7-3"
+       cx="721.89917"
+       cy="425"
+       rx="13.948437"
+       ry="13.948439" />
+    <ellipse
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5.90147;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path36221-6-7-3-2"
+       cx="721.89917"
+       cy="475"
+       rx="13.948437"
+       ry="13.948439" />
+    <g
+       id="g38036"
+       style="stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+         d="M 1198.1924,461.03362 1197.8389,500"
+         id="path25922"
+         inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\notch\text33970.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+         d="M 1265.7211,462.09428 1265.3676,500"
+         id="path25924"
+         inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\notch\text33970.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+         d="M 1217.6379,468.10469 V 500"
+         id="path25926"
+         inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\notch\text33970.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+         d="M 1291.177,485.07525 1291.8841,500"
+         id="path25930"
+         inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\notch\text33970.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+         d="m 1330.4214,500 v -9.975"
+         id="path25932"
+         inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\notch\text33970.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+         d="M 1308.8547,491.08566 1309.2082,500"
+         id="path25934"
+         inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\notch\text33970.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+         d="M 1178.747,477.29708 1179.4541,500"
+         id="path25936"
+         inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\notch\text33970.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+         d="M 1153.9983,487.55013 V 500"
+         id="path25938"
+         inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\notch\text33970.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+         d="m 1239.5582,500 0.7071,-62.3009"
+         id="path37916" />
+    </g>
   </g>
 </svg>
