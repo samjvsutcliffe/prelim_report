@@ -49,7 +49,7 @@ points = (points*origin)
 plt.plot(points[:,0],points[:,1])
 #data_name = "fs"
 #data_name = "cl-mpm"
-for data_name in ["","_2mp"]:
+for data_name in ["_2mp"]:
     data_dir = "./conv_files{}/".format(data_name)
     files = os.listdir(data_dir)
     p = re.compile(".*\.csv")
