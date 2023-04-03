@@ -1,0 +1,923 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1920"
+   height="1080"
+   viewBox="0 0 1920 1080"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="slump.svg"
+   inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\notch\notch.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="true"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:snap-object-midpoints="false"
+     inkscape:snap-midpoints="true"
+     inkscape:snap-center="true"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="1102.3795"
+     inkscape:cy="185.96908"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="2552"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g16776"
+     inkscape:lockguides="true">
+    <sodipodi:guide
+       position="69.915966,830"
+       orientation="0,1"
+       id="guide312"
+       inkscape:label=""
+       inkscape:locked="true"
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="1.7927171,580"
+       orientation="0,1"
+       id="guide314"
+       inkscape:label=""
+       inkscape:locked="true"
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="739.03552,949.43283"
+       orientation="1,0"
+       id="guide451"
+       inkscape:locked="true" />
+    <sodipodi:guide
+       position="1920,662.09989"
+       orientation="-1,0"
+       id="guide4616"
+       inkscape:label=""
+       inkscape:locked="true"
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="1186.5252,705"
+       orientation="0,-1"
+       id="guide7552"
+       inkscape:locked="true" />
+    <sodipodi:guide
+       position="1081.4613,562.16467"
+       orientation="0,-1"
+       id="guide2693"
+       inkscape:locked="true" />
+    <sodipodi:guide
+       position="1189.6858,580"
+       orientation="1,0"
+       id="guide3299"
+       inkscape:locked="true" />
+    <sodipodi:guide
+       position="654.5,471.5"
+       orientation="0,-1"
+       id="guide4469"
+       inkscape:locked="true" />
+    <sodipodi:guide
+       position="654.5,471.5"
+       orientation="1,0"
+       id="guide4471"
+       inkscape:locked="true" />
+    <sodipodi:guide
+       position="704.5,478"
+       orientation="-1,0"
+       id="guide5335"
+       inkscape:label=""
+       inkscape:locked="false"
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="666,421.5"
+       orientation="0,1"
+       id="guide5427"
+       inkscape:label=""
+       inkscape:locked="false"
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="663,521.5"
+       orientation="0,1"
+       id="guide5447"
+       inkscape:label=""
+       inkscape:locked="false"
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="654.5,496.5"
+       orientation="0,-1"
+       id="guide8281" />
+    <sodipodi:guide
+       position="679.5,471.5"
+       orientation="1,0"
+       id="guide8301" />
+    <sodipodi:guide
+       position="868.74103,705"
+       orientation="1,0"
+       id="guide8880" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible;"
+       id="Arrow2Mend"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mend"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.6) rotate(180) translate(0,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="stroke:context-stroke;fill-rule:evenodd;fill:context-stroke;stroke-width:0.62500000;stroke-linejoin:round;"
+         id="path15408" />
+    </marker>
+    <marker
+       style="overflow:visible;"
+       id="marker22641"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.4) rotate(180) translate(10,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt;"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path22639" />
+    </marker>
+    <marker
+       style="overflow:visible;"
+       id="marker22631"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.4) rotate(180) translate(10,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt;"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path22629" />
+    </marker>
+    <marker
+       style="overflow:visible;"
+       id="marker22621"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:isstock="true">
+      <path
+         transform="scale(1.1) rotate(180) translate(1,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="stroke:context-stroke;fill-rule:evenodd;fill:context-stroke;stroke-width:0.62500000;stroke-linejoin:round;"
+         id="path22619" />
+    </marker>
+    <marker
+       style="overflow:visible;"
+       id="Arrow2Lend"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:isstock="true">
+      <path
+         transform="scale(1.1) rotate(180) translate(1,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="stroke:context-stroke;fill-rule:evenodd;fill:context-stroke;stroke-width:0.62500000;stroke-linejoin:round;"
+         id="path15402" />
+    </marker>
+    <marker
+       style="overflow:visible;"
+       id="Arrow1Mend"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.4) rotate(180) translate(10,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt;"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path15390" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow2Mstart"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mstart"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.6) translate(0,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="stroke:context-stroke;fill-rule:evenodd;fill:context-stroke;stroke-width:0.62500000;stroke-linejoin:round"
+         id="path15405" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker19664"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lstart"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8) translate(12.5,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path19662" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker19654"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lstart"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8) translate(12.5,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path19652" />
+    </marker>
+    <marker
+       style="overflow:visible;"
+       id="marker19644"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8) rotate(180) translate(12.5,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt;"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path19642" />
+    </marker>
+    <marker
+       style="overflow:visible;"
+       id="marker19622"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8) rotate(180) translate(12.5,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt;"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path19620" />
+    </marker>
+    <linearGradient
+       id="linearGradient18913"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop18911" />
+    </linearGradient>
+    <marker
+       style="overflow:visible;"
+       id="Arrow1Lend"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8) rotate(180) translate(12.5,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt;"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path15384" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lstart"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lstart"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8) translate(12.5,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path15381" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lend-5"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path15384-4" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 739.03552,500 H 1640.3361 V 300 l 0,-50 H 1448.9153 739.03552 v 250"
+       id="path226"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <g
+       id="g16776"
+       transform="translate(-414.91046)"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 1180,250 V 500"
+         id="path6388"
+         inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:33.3333px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
+         x="1197.4957"
+         y="390.19531"
+         id="text7470"
+         inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96"><tspan
+           sodipodi:role="line"
+           id="tspan7468"
+           x="1197.4957"
+           y="390.19531">H</tspan></text>
+      <path
+         style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 1170,250 h 20"
+         id="path15947"
+         inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 1190,500 h -20"
+         id="path15949"
+         inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+    </g>
+    <ellipse
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5.90147;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path36221"
+       cx="721.89917"
+       cy="275"
+       rx="13.948437"
+       ry="13.948439"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5.90147;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path36221-6"
+       cx="721.89917"
+       cy="325"
+       rx="13.948437"
+       ry="13.948439"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5.90147;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path36221-6-7"
+       cx="721.89917"
+       cy="375"
+       rx="13.948437"
+       ry="13.948439"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5.90147;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path36221-6-7-3"
+       cx="721.89917"
+       cy="425"
+       rx="13.948437"
+       ry="13.948439"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5.90147;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path36221-6-7-3-2"
+       cx="721.89917"
+       cy="475"
+       rx="13.948437"
+       ry="13.948439"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5.90147;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path36221-7-3-4"
+       cx="1189.6858"
+       cy="517.83533"
+       rx="13.948437"
+       ry="13.948439"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5.90147;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="ellipse3385"
+       cx="1189.6858"
+       cy="517.83533"
+       rx="13.948437"
+       ry="13.948439"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5.90147;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="ellipse3385-3"
+       cx="1239.6858"
+       cy="517.83533"
+       rx="13.948437"
+       ry="13.948439"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5.90147;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="ellipse3385-3-1"
+       cx="1289.6858"
+       cy="517.83533"
+       rx="13.948437"
+       ry="13.948439"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5.90147;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="ellipse3451-8"
+       cx="1339.6858"
+       cy="517.83533"
+       rx="13.948437"
+       ry="13.948439"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5.90147;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="ellipse3385-3-0"
+       cx="1389.6858"
+       cy="517.83533"
+       rx="13.948437"
+       ry="13.948439"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5.90147;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="ellipse3385-3-1-6"
+       cx="1439.6858"
+       cy="517.83533"
+       rx="13.948437"
+       ry="13.948439"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5.90147;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="ellipse3451-8-4"
+       cx="1489.6858"
+       cy="517.83533"
+       rx="13.948437"
+       ry="13.948439"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5.90147;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="ellipse3385-3-1-6-9"
+       cx="1539.6858"
+       cy="517.83533"
+       rx="13.948437"
+       ry="13.948439"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5.90147;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="ellipse3451-8-4-9"
+       cx="1589.6858"
+       cy="517.83533"
+       rx="13.948437"
+       ry="13.948439"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5.90147;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="ellipse3385-2"
+       cx="789.68579"
+       cy="517.83533"
+       rx="13.948437"
+       ry="13.948439"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5.90147;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="ellipse3385-3-7"
+       cx="839.68579"
+       cy="517.83533"
+       rx="13.948437"
+       ry="13.948439"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5.90147;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="ellipse3385-3-1-5"
+       cx="889.68579"
+       cy="517.83533"
+       rx="13.948437"
+       ry="13.948439"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5.90147;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="ellipse3451-8-2"
+       cx="939.68579"
+       cy="517.83533"
+       rx="13.948437"
+       ry="13.948439"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5.90147;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="ellipse3385-3-0-4"
+       cx="989.68579"
+       cy="517.83533"
+       rx="13.948437"
+       ry="13.948439"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5.90147;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="ellipse3385-3-1-6-2"
+       cx="1039.6858"
+       cy="517.83533"
+       rx="13.948437"
+       ry="13.948439"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5.90147;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="ellipse3451-8-4-0"
+       cx="1089.6858"
+       cy="517.83533"
+       rx="13.948437"
+       ry="13.948439"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5.90147;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="ellipse3385-3-1-6-9-7"
+       cx="1139.6858"
+       cy="517.83533"
+       rx="13.948437"
+       ry="13.948439"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <g
+       id="g11127"
+       transform="translate(-25,-108.5)"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow2Mstart);marker-end:url(#Arrow2Mend)"
+         d="m 654.5,558.5 v 50 h 50"
+         id="path5884"
+         inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
+         x="667.66406"
+         y="649.35999"
+         id="text6857"
+         inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96"><tspan
+           sodipodi:role="line"
+           id="tspan6855"
+           x="667.66406"
+           y="649.35999">x</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
+         x="611.29382"
+         y="590.38477"
+         id="text8181"
+         inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96"><tspan
+           sodipodi:role="line"
+           id="tspan8179"
+           x="611.29382"
+           y="590.38477">y</tspan></text>
+    </g>
+    <ellipse
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.952428;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path8756"
+       cx="868.74103"
+       cy="375"
+       rx="4.5237861"
+       ry="4.5237856"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.952428;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path8756-7"
+       cx="868.74103"
+       cy="365"
+       rx="4.5237861"
+       ry="4.5237856"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.952428;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path8756-7-5"
+       cx="868.74103"
+       cy="355"
+       rx="4.5237861"
+       ry="4.5237856"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.952428;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path8756-7-3"
+       cx="868.74103"
+       cy="345"
+       rx="4.5237861"
+       ry="4.5237856"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.952428;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path8756-7-5-3"
+       cx="868.74103"
+       cy="335"
+       rx="4.5237861"
+       ry="4.5237856"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.952428;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path8756-7-9"
+       cx="868.74103"
+       cy="325"
+       rx="4.5237861"
+       ry="4.5237856"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.952428;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path8756-7-5-0"
+       cx="868.74103"
+       cy="315"
+       rx="4.5237861"
+       ry="4.5237856"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.952428;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path8756-7-3-0"
+       cx="868.74103"
+       cy="305"
+       rx="4.5237861"
+       ry="4.5237856"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.952428;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path8756-7-5-3-0"
+       cx="868.74103"
+       cy="295"
+       rx="4.5237861"
+       ry="4.5237856"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.952428;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path8756-7-5-3-1"
+       cx="868.74103"
+       cy="285"
+       rx="4.5237861"
+       ry="4.5237856"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.952428;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path8756-7-9-3"
+       cx="868.74103"
+       cy="275"
+       rx="4.5237861"
+       ry="4.5237856"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.952428;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path8756-7-5-0-1"
+       cx="868.74103"
+       cy="265"
+       rx="4.5237861"
+       ry="4.5237856"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.952428;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path8756-7-3-0-0"
+       cx="868.74103"
+       cy="255"
+       rx="4.5237861"
+       ry="4.5237856"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.952428;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path8756-9"
+       cx="868.74103"
+       cy="495"
+       rx="4.5237861"
+       ry="4.5237856"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.952428;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path8756-7-8"
+       cx="868.74103"
+       cy="485"
+       rx="4.5237861"
+       ry="4.5237856"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.952428;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path8756-7-5-9"
+       cx="868.74103"
+       cy="475"
+       rx="4.5237861"
+       ry="4.5237856"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.952428;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path8756-7-3-3"
+       cx="868.74103"
+       cy="465"
+       rx="4.5237861"
+       ry="4.5237856"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.952428;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path8756-7-5-3-6"
+       cx="868.74103"
+       cy="455"
+       rx="4.5237861"
+       ry="4.5237856"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.952428;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path8756-7-9-0"
+       cx="868.74103"
+       cy="445"
+       rx="4.5237861"
+       ry="4.5237856"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.952428;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path8756-7-5-0-8"
+       cx="868.74103"
+       cy="435"
+       rx="4.5237861"
+       ry="4.5237856"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.952428;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path8756-7-3-0-8"
+       cx="868.74103"
+       cy="425"
+       rx="4.5237861"
+       ry="4.5237856"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.952428;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path8756-7-5-3-0-1"
+       cx="868.74103"
+       cy="415"
+       rx="4.5237861"
+       ry="4.5237856"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.952428;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path8756-7-5-3-1-3"
+       cx="868.74103"
+       cy="405"
+       rx="4.5237861"
+       ry="4.5237856"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.952428;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path8756-7-9-3-2"
+       cx="868.74103"
+       cy="395"
+       rx="4.5237861"
+       ry="4.5237856"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.952428;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path8756-7-5-0-1-2"
+       cx="868.74103"
+       cy="385"
+       rx="4.5237861"
+       ry="4.5237856"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
+       x="893.5"
+       y="389.99023"
+       id="text10656"
+       inkscape:export-filename="C:\Users\rmvn14\Documents\prelim_report\Figures\slump\slump_diagram.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan10654"
+         x="893.5"
+         y="389.99023">far field MPs</tspan></text>
+  </g>
+</svg>
