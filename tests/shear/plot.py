@@ -13,4 +13,5 @@ for key,marker,ls in zip(df,markers,linestyles):
 plt.legend()
 plt.xlabel("Shear ratio")
 plt.ylabel("Normalised shear stress")
+plt.savefig("shear.png")
 plt.show()
