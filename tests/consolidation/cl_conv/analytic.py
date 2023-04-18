@@ -49,7 +49,7 @@ points = (points*origin)
 plt.plot(points[:,0],points[:,1])
 #data_name = "fs"
 #data_name = "cl-mpm"
-for data_name in ["_2mp"]:
+for data_name in [""]:
     data_dir = "./conv_files{}/".format(data_name)
     files = os.listdir(data_dir)
     p = re.compile(".*\.csv")
@@ -113,7 +113,6 @@ for data_name in ["_2mp"]:
     convergance = pd.DataFrame({"elements":elements,"error":error})
     convergance.to_csv("convergance_{}.csv".format(data_name))
     plt.figure(10)
-    plt.title("Conv")
     plt.plot(elements,error,"-o",label=data_name)
     plt.xlabel("Elements")
     plt.ylabel("Normalised stress error")
@@ -133,5 +132,8 @@ for data_name in ["_2mp"]:
     plt.yscale("log")
     plt.legend()
     #plt.plot(points[:,0],points[:,1])
+plt.figure(10)
+plt.savefig("convergance.png")
+plt.title("Conv")
 plt.show()
 
