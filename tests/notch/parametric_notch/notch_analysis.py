@@ -23,7 +23,7 @@ output_dir = "./output_notch/"
 
 
 scale = np.array([200,300])
-for name,s in zip(["elastic","viscous"],scale):
+for name,s in zip(["elastic","300"],scale):
     output_dir = "./output_notch_{}/".format(name)
 
     files = os.listdir(output_dir)
@@ -46,8 +46,10 @@ for name,s in zip(["elastic","viscous"],scale):
     lengths = np.array(lengths)
     max_stress = np.array(max_stress)
     stress_pos = np.array(stress_pos)
+    lenghts /= s
+    max_stress /= s * 1000 * 9.8
     plt.figure(2)
-    plt.plot(lengths,max_stress*1e-6,"-o",label=name)
+    plt.plot(lengths,max_stress,"-o",label=name)
     plt.figure(3)
     plt.plot(lengths,2000-stress_pos,"-o",label=name)
 
@@ -66,7 +68,6 @@ plt.gcf().set_size_inches(width, height)
 if PDF_OUTPUT:
     plt.savefig("bench_stress.pdf")
 plt.figure(3)
-#plt.plot(lengths,2000-stress_pos,"-o")
 plt.xlabel("Notch length (m)")
 plt.ylabel("Max EPS distance from front")
 plt.gcf().subplots_adjust(left=.15, bottom=.16, right=.99, top=.97)

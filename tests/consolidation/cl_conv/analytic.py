@@ -1,9 +1,22 @@
+PDF_OUTPUT = True
+import matplotlib as mpl
+if PDF_OUTPUT:
+    mpl.use('pdf')
 import pandas as pd
 import numpy as np
 import re
 import os
 import matplotlib.pyplot as plt
 
+plt.rc('font', family='serif', serif='Times')
+plt.rc('text', usetex=True)
+plt.rc('xtick', labelsize=8)
+plt.rc('ytick', labelsize=8)
+plt.rc('axes', labelsize=8)
+
+# width as measured in inkscape
+width = 3.487
+height = width / 1.618
 
 E = 1e6
 L = 50
@@ -134,6 +147,10 @@ for data_name in [""]:
     #plt.plot(points[:,0],points[:,1])
 plt.figure(10)
 plt.savefig("convergance.png")
+plt.gcf().subplots_adjust(left=.15, bottom=.16, right=.99, top=.97)
+plt.gcf().set_size_inches(width, height)
+if PDF_OUTPUT:
+    plt.savefig("convergance.pdf")
 plt.title("Conv")
 plt.show()
 
