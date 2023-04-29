@@ -1,4 +1,4 @@
-PDF_OUTPUT = True
+PDF_OUTPUT = False
 import matplotlib as mpl
 if PDF_OUTPUT:
     mpl.use('pdf')
@@ -9,7 +9,8 @@ import os
 import matplotlib.pyplot as plt
 
 plt.rc('font', family='serif', serif='Times')
-plt.rc('text', usetex=True)
+if PDF_OUTPUT:
+    plt.rc('text', usetex=True)
 plt.rc('xtick', labelsize=8)
 plt.rc('ytick', labelsize=8)
 plt.rc('axes', labelsize=8)

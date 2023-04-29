@@ -95,7 +95,7 @@ for frame,i in enumerate(bindings):
     p = PatchCollection(patch_list, cmap=cm.jet, alpha=1)
     p.set_array(df["eps"]*1e-6)
     ax.add_collection(p)
-    fig.colorbar(p,location="bottom")
+    fig.colorbar(p,location="bottom",label="EPS")
 
     ax.set_xlim([0,1100])
     ax.set_ylim([-210,40])
@@ -124,7 +124,7 @@ for frame,i in enumerate(bindings):
     p = PatchCollection(patch_list, cmap=cm.jet, alpha=1)
     p.set_array(df["damage"])
     ax.add_collection(p)
-    fig.colorbar(p,location="bottom")
+    fig.colorbar(p,location="bottom",label="damage")
 
     ax.set_xlim([0,1100])
     ax.set_ylim([-210,40])

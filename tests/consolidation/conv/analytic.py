@@ -49,7 +49,7 @@ points = (points*origin)
 plt.plot(points[:,0],points[:,1])
 #data_name = "fs"
 
-for data_name in ["fs","mpm"]:
+for data_name in ["fs"]:
     data_dir = "./{}_conv_files/".format(data_name)
     files = os.listdir(data_dir)
     numbers = re.compile("\d+")
