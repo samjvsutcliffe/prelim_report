@@ -19,21 +19,16 @@ for i,dname in enumerate(files_csvs):
     damage.append(df["damage"].mean())
     time.append(i*dt)
 
-critical_stress = 0.2e6
+critical_stress = 1.00e6
 time_period = 8
 time = np.array(time)
 damage = np.array(damage)
 max_stress = np.array(max_stress)
 plt.figure(1)
-plt.xlabel("N")
-plt.plot(time/time_period,max_stress/critical_stress,"-o")
-plt.figure(2)
-plt.xlabel("N")
-plt.plot(time/time_period,damage,"-o")
-plt.figure(3)
 plt.xlabel("Time")
+plt.ylabel("Stress")
 plt.plot(time,max_stress/critical_stress,"-o")
-plt.figure(4)
+plt.figure(2)
 plt.xlabel("Time")
 plt.plot(time,damage,"-o")
 plt.show()

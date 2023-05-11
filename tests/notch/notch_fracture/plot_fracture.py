@@ -1,4 +1,4 @@
-PDF_OUTPUT = False
+PDF_OUTPUT = True
 import matplotlib as mpl
 if PDF_OUTPUT:
     mpl.use('pdf')
@@ -37,50 +37,63 @@ for i,dname in enumerate(files_csvs):
     time.append(i*dt)
     full_data.append(df)
 
-bindings = [0,10,11,15, 40]
-#bindings = range(0,60,1)
-fig,axs = plt.subplots(len(bindings),1)
-for frame,i in enumerate(bindings):
-    ax = axs[frame]
-    #fig = plt.figure()
-    #ax = fig.add_subplot(111,aspect="equal")
-    df = full_data[i]
-    patch_list=[]
-    #plt.plot([])
-    #plt.scatter(df["coord_x"],df["coord_y"],c="b")
-    for a_x, a_y,lx,ly,damage in zip(df["coord_x"],
-                                     df["coord_y"]-300,
-                                     df["lx"],
-                                     df["ly"],
-                                     df["damage"]):
-        patch = Rectangle(
-            xy=(a_x-lx/2, a_y-ly/2) ,width=lx, height=ly)
-#            linewidth=1,fill=True)
-        patch_list.append(patch)
-        #ax.add_patch(patch)
-#    for patch,damage in zip(patch_list,df["damage"]):
-    p = PatchCollection(patch_list, cmap=cm.jet, alpha=1)
-    p.set_array(df["eps"]*1e-6)
-    ax.add_collection(p)
-    #fig.colorbar(p,location="bottom")
-    ax.set_xlim([0,1100])
-    ax.set_ylim([-220,30])
-    ax.label_outer()
-    #plt.xlim([0,1100])
-    #plt.ylim([100,330])
-    #plt.savefig("outframes/frame_{:05}.png".format(i))
-    #plt.savefig("stress_states_{:05}.pdf".format(i))
-    #p.set_clim([0,1])
-    #plt.close("all")
+xlim = [1500,3100]
 
+bindings = [0,25,50,100,150]
+#bindings = [-1]
+#fig,axs = plt.subplots(len(bindings),1)
+#for frame,i in enumerate(bindings):
+#    ax = axs[frame]
+#    #fig = plt.figure()
+#    #ax = fig.add_subplot(111,aspect="equal")
+#    df = full_data[i]
+#    patch_list=[]
+#
+#    #patch = Rectangle(xy=(0,0) ,width=6000, height=-300,color="blue")
+#    #patch_sea = [patch]
+#    #ps = PatchCollection(patch_sea)
+#
+#    #plt.plot([])
+#    #plt.scatter(df["coord_x"],df["coord_y"],c="b")
+#    for a_x, a_y,lx,ly,damage in zip(df["coord_x"],
+#                                     df["coord_y"]-300,
+#                                     df["lx"],
+#                                     df["ly"],
+#                                     df["damage"]):
+#        patch = Rectangle(
+#            xy=(a_x-lx/2, a_y-ly/2) ,width=lx, height=ly)
+#        patch_list.append(patch)
+#    p = PatchCollection(patch_list, cmap=cm.jet, alpha=1)
+#    p.set_array(df["eps"]*1e-6)
+#    ax.add_collection(p)
+#
+#    #fig.colorbar(p,location="bottom")
+#    ax.set_xlim(xlim)
+#    ax.set_ylim([-220,30])
+#    ax.label_outer()
+#    #plt.xlim([0,1100])
+#    #plt.ylim([100,330])
+#    #plt.savefig("outframes/frame_{:05}.png".format(i))
+#    #plt.savefig("stress_states_{:05}.pdf".format(i))
+#    #p.set_clim([0,1])
+#    #plt.close("all")
+#
 # plt.xlim([0,1100])
 # plt.ylim([100,330])
-plt.savefig("combined.pdf".format(i))
+#plt.savefig("combined.pdf".format(i))
+
+figure_aspect = 0.40
 
 for frame,i in enumerate(bindings):
     fig = plt.figure()
     ax = fig.add_subplot(111,aspect="equal")
     df = full_data[i]
+
+    #patch = Rectangle(xy=(0,0) ,width=6000, height=-300,color="blue")
+    #patch_sea = [patch]
+    #ps = PatchCollection(patch_sea)
+    #ax.add_collection(ps)
+
     patch_list=[]
     #plt.plot([])
     #plt.scatter(df["coord_x"],df["coord_y"],c="b")
@@ -95,13 +108,14 @@ for frame,i in enumerate(bindings):
     p = PatchCollection(patch_list, cmap=cm.jet, alpha=1)
     p.set_array(df["eps"]*1e-6)
     ax.add_collection(p)
-    fig.colorbar(p,location="bottom",label="EPS")
+    fig.colorbar(p,location="bottom",label="EPS",pad=0.2)
 
-    ax.set_xlim([0,1100])
+
+    ax.set_xlim(xlim)
     ax.set_ylim([-210,40])
     #plt.savefig("outframes/frame_{:05}.png".format(i))
-    plt.gcf().subplots_adjust(left=.15, bottom=.16, right=.99, top=.97)
-    plt.gcf().set_size_inches(width, height)
+    plt.gcf().subplots_adjust(left=.15, bottom=.28, right=.95, top=1.0)
+    plt.gcf().set_size_inches(width, width * figure_aspect)
     plt.savefig("stress_states_{:05}.pdf".format(i))
     #p.set_clim([0,1])
     #plt.close("all")
@@ -124,13 +138,15 @@ for frame,i in enumerate(bindings):
     p = PatchCollection(patch_list, cmap=cm.jet, alpha=1)
     p.set_array(df["damage"])
     ax.add_collection(p)
-    fig.colorbar(p,location="bottom",label="damage")
+    fig.colorbar(p,location="bottom",label="damage",pad=0.2)
 
-    ax.set_xlim([0,1100])
+    ax.set_xlim(xlim)
     ax.set_ylim([-210,40])
     #plt.savefig("outframes/frame_{:05}.png".format(i))
-    plt.gcf().subplots_adjust(left=.15, bottom=.16, right=.99, top=.97)
-    plt.gcf().set_size_inches(width, height)
+    plt.gcf().subplots_adjust(left=.15, bottom=.28, right=.95, top=1.0)
+    plt.gcf().set_size_inches(width, width * figure_aspect)
+    #plt.gcf().subplots_adjust(left=.15, bottom=.16, right=.99, top=.97)
+    #plt.gcf().set_size_inches(width, height)
     plt.savefig("damage_states_{:05}.pdf".format(i))
     #p.set_clim([0,1])
     #plt.close("all")
