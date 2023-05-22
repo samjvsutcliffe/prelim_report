@@ -1,10 +1,13 @@
-PDF_OUTPUT = False
+PDF_OUTPUT = True
 import matplotlib as mpl
 if PDF_OUTPUT:
     mpl.use('pdf')
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
+from matplotlib.patches import Rectangle
+from matplotlib.collections import PatchCollection
+from matplotlib import cm
 import os
 import re
 
@@ -21,9 +24,11 @@ height = width / 1.618
 
 output_dir = "./output_notch/"
 
+plt.figure(1)
+plt.figure(2)
 
-scale = np.array([200,300])
-for name,s in zip(["elastic","300"],scale):
+scale = np.array([200])
+for name,s in zip(["200"],scale):
     output_dir = "./output_notch_{}/".format(name)
 
     files = os.listdir(output_dir)
@@ -38,26 +43,35 @@ for name,s in zip(["elastic","300"],scale):
     stress_pos = []
     for dname in lengths:
         df = pd.read_csv(output_dir+"/final_{}.csv".format(dname))
-        #plt.scatter(df["coord_x"],df["coord_y"],label=dname)
-        #plt.legend()
-        s1 = df["eps"].max()
+        bottom_ids = df["coord_y"] < 300
+        s1 = df["eps"][bottom_ids].max()
+        pos = df["coord_x"][df["eps"]==s1].iat[0]
+        print(pos)
         max_stress.append(s1)
-        stress_pos.append(df["coord_x"][df["eps"]==s1])
+        stress_pos.append(pos)
+        #plt.figure()
+        #plt.scatter(df["coord_x"],df["coord_y"],c=df["eps"]*1e-6,label=dname)
+        #plt.axvline(x=pos)
+        #plt.colorbar()
+        #plt.legend()
     lengths = np.array(lengths)
     max_stress = np.array(max_stress)
     stress_pos = np.array(stress_pos)
-    lenghts /= s
-    max_stress /= s * 1000 * 9.8
-    plt.figure(2)
+    name = "MPM"
+    max_stress *= 1e-6
+    #lengths /= s
+    #max_stress /= s * 1000 * 9.8
+    plt.figure(1)
     plt.plot(lengths,max_stress,"-o",label=name)
-    plt.figure(3)
-    plt.plot(lengths,2000-stress_pos,"-o",label=name)
+    plt.figure(2)
+    plt.plot(lengths,1000-stress_pos,"-o",label=name)
 
 width = 3.487
 height = width / 1.618
 
-plt.figure(2)
+plt.figure(1)
 #plt.plot(lengths,max_stress*1e-6,"-o")
+#plt.plot(lengths,max_stress,"-o",label=name)
 plt.xlabel("Notch length ($m$)")
 plt.ylabel("EPS ($MPa$)")
 plt.legend()
@@ -67,13 +81,51 @@ plt.gcf().subplots_adjust(left=.15, bottom=.16, right=.99, top=.97)
 plt.gcf().set_size_inches(width, height)
 if PDF_OUTPUT:
     plt.savefig("bench_stress.pdf")
-plt.figure(3)
+plt.figure(2)
+data = [734, 509 , 320 , 248 , 219 , 213]
+lengths = [0,10,25,50,75,100]
+plt.plot(lengths,data,"-o",label="2D Mosbeux")
+plt.legend()
 plt.xlabel("Notch length (m)")
 plt.ylabel("Max EPS distance from front")
 plt.gcf().subplots_adjust(left=.15, bottom=.16, right=.99, top=.97)
 plt.gcf().set_size_inches(width, height)
 if PDF_OUTPUT:
     plt.savefig("bench_distance.pdf")
+
+bindings = [100]
+for frame,i in enumerate(bindings):
+    fig = plt.figure()
+    ax = fig.add_subplot(111,aspect="equal")
+    df = pd.read_csv(output_dir+"/final_{}.csv".format(i))
+
+    #patch = Rectangle(xy=(0,0) ,width=6000, height=-300,color="blue")
+    #patch_sea = [patch]
+    #ps = PatchCollection(patch_sea)
+    #ax.add_collection(ps)
+
+    patch_list=[]
+    for a_x, a_y,lx,ly,damage in zip(df["coord_x"],
+                                     df["coord_y"]-300,
+                                     df["lx"],
+                                     df["ly"],
+                                     df["damage"]):
+        patch = Rectangle(
+            xy=(a_x-lx/2, a_y-ly/2) ,width=lx, height=ly)
+        patch_list.append(patch)
+    p = PatchCollection(patch_list, cmap=cm.jet, alpha=1)
+    p.set_array(df["eps"]*1e-6)
+    ax.add_collection(p)
+    fig.colorbar(p,location="bottom",label="EPS ($MPa$)",pad=0.2)
+
+
+    ax.set_xlim([0,1020])
+    ax.set_ylim([-210,40])
+    #plt.savefig("outframes/frame_{:05}.png".format(i))
+    plt.gcf().subplots_adjust(left=.15, bottom=.28, right=.95, top=1.0)
+    figure_aspect = 0.5
+    plt.gcf().set_size_inches(width, width * figure_aspect)
+    plt.savefig("stress_bench.pdf".format(i))
 plt.show()
 
 
