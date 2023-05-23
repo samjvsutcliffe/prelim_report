@@ -1,4 +1,4 @@
-PDF_OUTPUT = True
+PDF_OUTPUT = False
 import matplotlib as mpl
 if PDF_OUTPUT:
     mpl.use('pdf')
@@ -29,34 +29,41 @@ plt.figure(2)
 
 scale = np.array([200])
 for name,s in zip(["200"],scale):
-    output_dir = "./output_notch_{}/".format(name)
+    output_dir = "./output_notch/".format(name)
 
-    files = os.listdir(output_dir)
-    finalcsv = re.compile("final.*.csv")
-    files_csvs = list(filter(finalcsv.match,files))
-    numbers = re.compile("\d*")
-    lengths = sorted([[int(y) for y in x if y][0] for x in map(numbers.findall,files_csvs)])
-    print("Notch lengths")
-    print(lengths)
+    #files = os.listdir(output_dir)
+    #finalcsv = re.compile("final.*.csv")
+    #files_csvs = list(filter(finalcsv.match,files))
+    #numbers = re.compile("\d*")
+    #lengths = sorted([[int(y) for y in x if y][0] for x in map(numbers.findall,files_csvs)])
+    #lengths_mpm = lengths
+    #print("Notch lengths")
+    #print(lengths)
 
-    max_stress = []
-    stress_pos = []
-    for dname in lengths:
-        df = pd.read_csv(output_dir+"/final_{}.csv".format(dname))
-        bottom_ids = df["coord_y"] < 300
-        s1 = df["eps"][bottom_ids].max()
-        pos = df["coord_x"][df["eps"]==s1].iat[0]
-        print(pos)
-        max_stress.append(s1)
-        stress_pos.append(pos)
-        #plt.figure()
-        #plt.scatter(df["coord_x"],df["coord_y"],c=df["eps"]*1e-6,label=dname)
-        #plt.axvline(x=pos)
-        #plt.colorbar()
-        #plt.legend()
-    lengths = np.array(lengths)
-    max_stress = np.array(max_stress)
-    stress_pos = np.array(stress_pos)
+    #max_stress = []
+    #eps_stress = []
+    #stress_pos = []
+    #for dname in lengths:
+    #    df = pd.read_csv(output_dir+"/final_{}.csv".format(dname))
+    #    bottom_ids = df["coord_y"] < 250
+    #    tau_xx = df["stress_xx"] - (0.5 * (df["stress_xx"] + df["stress_yy"]))
+    #    s1 = tau_xx[bottom_ids].max()
+    #    pos = df["coord_x"][tau_xx==s1].iat[0]
+    #    print(pos)
+    #    max_stress.append(s1)
+    #    eps_stress.append(df["eps"].max())
+    #    stress_pos.append(pos)
+    #    #plt.figure()
+    #    #plt.scatter(df["coord_x"],df["coord_y"],c=df["eps"]*1e-6,label=dname)
+    #    #plt.axvline(x=pos)
+    #    #plt.colorbar()
+    #    #plt.legend()
+    df = pd.read_csv(output_dir+"notch_txx.csv")
+    lengths = np.array(df["length"])
+    lengths_mpm = lengths
+    max_stress = np.array(df["txx"])
+    stress_pos = np.array(df["x"])
+    print("{}: {}".format(name,8000-stress_pos[-1]))
     name = "MPM"
     max_stress *= 1e-6
     #lengths /= s
@@ -64,7 +71,7 @@ for name,s in zip(["200"],scale):
     plt.figure(1)
     plt.plot(lengths,max_stress,"-o",label=name)
     plt.figure(2)
-    plt.plot(lengths,1000-stress_pos,"-o",label=name)
+    plt.plot(lengths,8000-stress_pos,"-o",label=name)
 
 width = 3.487
 height = width / 1.618
@@ -75,7 +82,7 @@ plt.figure(1)
 plt.xlabel("Notch length ($m$)")
 plt.ylabel("EPS ($MPa$)")
 plt.legend()
-plt.axhline(0.2,c="r",ls="--")
+plt.axhline(0.33,c="r",ls="--")
 
 plt.gcf().subplots_adjust(left=.15, bottom=.16, right=.99, top=.97)
 plt.gcf().set_size_inches(width, height)
@@ -93,11 +100,13 @@ plt.gcf().set_size_inches(width, height)
 if PDF_OUTPUT:
     plt.savefig("bench_distance.pdf")
 
+print("Mos: {}".format(data[-1]))
+
 bindings = [100]
 for frame,i in enumerate(bindings):
     fig = plt.figure()
     ax = fig.add_subplot(111,aspect="equal")
-    df = pd.read_csv(output_dir+"/final_{}.csv".format(i))
+    df = pd.read_csv(output_dir+"/final_{}.csv".format(int(i)))
 
     #patch = Rectangle(xy=(0,0) ,width=6000, height=-300,color="blue")
     #patch_sea = [patch]
@@ -114,7 +123,9 @@ for frame,i in enumerate(bindings):
             xy=(a_x-lx/2, a_y-ly/2) ,width=lx, height=ly)
         patch_list.append(patch)
     p = PatchCollection(patch_list, cmap=cm.jet, alpha=1)
-    p.set_array(df["eps"]*1e-6)
+    tau_xx = df["stress_xx"] - (0.5 * (df["stress_xx"] + df["stress_yy"]))
+    eps = df["eps"]
+    p.set_array(tau_xx*1e-6)
     ax.add_collection(p)
     fig.colorbar(p,location="bottom",label="EPS ($MPa$)",pad=0.2)
 
