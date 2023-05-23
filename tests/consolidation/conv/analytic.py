@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 E = 1e6
 L = 50
 g = 10
-rho = 80
+rho = 800
 
 def calculate_f(y):
     f = 1

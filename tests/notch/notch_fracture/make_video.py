@@ -72,6 +72,7 @@ for frame,i in enumerate(range(len(full_data))):
 
     ax.set_xlim(xlim)
     ax.set_ylim([-210,40])
+    plt.title("t = {}s".format(i * 10))
     plt.savefig("outframes/frame_{:05}.png".format(i))
     #plt.gcf().subplots_adjust(left=.15, bottom=.16, right=.99, top=.97)
     #plt.gcf().set_size_inches(width, height)
