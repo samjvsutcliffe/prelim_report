@@ -57,11 +57,72 @@ plt.gcf().set_size_inches(width, height)
 plt.savefig("sxx_analytic.pdf")
 
 
-length_plot = 2100
+length_plot = 600
 
 bindings = [0, 25, 50 , 75 , 100]
 bindings = [i for i in bindings if i < len(full_data)]
 
+#for frame,i in enumerate(bindings):
+#    fig = plt.figure()
+#    ax = fig.add_subplot(111,aspect="equal")
+#    df = full_data[i]
+#    patch_list=[]
+#    #plt.plot([])
+#    #plt.scatter(df["coord_x"],df["coord_y"],c="b")
+#    for a_x, a_y,lx,ly,damage in zip(df["coord_x"],
+#                                     df["coord_y"],
+#                                     df["lx"],
+#                                     df["ly"],
+#                                     df["damage"]):
+#        patch = Rectangle(
+#            xy=(a_x-lx/2, a_y-ly/2) ,width=lx, height=ly)
+#        patch_list.append(patch)
+#    p = PatchCollection(patch_list, cmap=cm.jet, alpha=1)
+#    #p.set_array(df["stress_xx"]*1e-6)
+#    p.set_array(df["tau_xy"]*1e-6)
+#    ax.add_collection(p)
+#    fig.colorbar(p,location="bottom",label= "$\sigma_{xy}$")
+#
+#    ax.set_xlim([0,length_plot])
+#    ax.set_ylim([0,110])
+#    #plt.savefig("outframes/frame_{:05}.png".format(i))
+#    plt.gcf().subplots_adjust(left=.08, bottom=.22, right=.95, top=.95)
+#    plt.gcf().set_size_inches(width, width/2.0)
+#    # plt.savefig("shear_stress_{:05}.pdf".format(i))
+#    plt.savefig("stress_xy.pdf")
+#    #p.set_clim([0,1])
+#    #plt.close("all")
+#
+#for frame,i in enumerate(bindings):
+#    fig = plt.figure()
+#    ax = fig.add_subplot(111,aspect="equal")
+#    df = full_data[i]
+#    patch_list=[]
+#    #plt.plot([])
+#    #plt.scatter(df["coord_x"],df["coord_y"],c="b")
+#    for a_x, a_y,lx,ly,damage in zip(df["coord_x"],
+#                                     df["coord_y"],
+#                                     df["lx"],
+#                                     df["ly"],
+#                                     df["damage"]):
+#        patch = Rectangle(
+#            xy=(a_x-lx/2, a_y-ly/2) ,width=lx, height=ly)
+#        patch_list.append(patch)
+#    p = PatchCollection(patch_list, cmap=cm.jet, alpha=1)
+#    #p.set_array(df["stress_xx"]*1e-6)
+#    p.set_array(df["stress_xx"]*1e-6)
+#    ax.add_collection(p)
+#    fig.colorbar(p,location="bottom",label= "$\sigma_{xx}$")
+#
+#    ax.set_xlim([0,length_plot])
+#    ax.set_ylim([0,110])
+#    #plt.savefig("outframes/frame_{:05}.png".format(i))
+#    plt.gcf().subplots_adjust(left=.08, bottom=.22, right=.95, top=.95)
+#    plt.gcf().set_size_inches(width, width/2.0)
+#    plt.savefig("stress_xx_{:05}.pdf".format(frame))
+#    #p.set_clim([0,1])
+#    #plt.close("all")
+
 for frame,i in enumerate(bindings):
     fig = plt.figure()
     ax = fig.add_subplot(111,aspect="equal")
@@ -77,49 +138,21 @@ for frame,i in enumerate(bindings):
         patch = Rectangle(
             xy=(a_x-lx/2, a_y-ly/2) ,width=lx, height=ly)
         patch_list.append(patch)
+
     p = PatchCollection(patch_list, cmap=cm.jet, alpha=1)
-    #p.set_array(df["stress_xx"]*1e-6)
     p.set_array(df["tau_xy"]*1e-6)
     ax.add_collection(p)
-    fig.colorbar(p,location="bottom",label= "$\sigma_{xy}$")
+    #fig.colorbar(p,location="bottom",label= "$\sigma_{xx}$")
 
+    dx = length_plot
+    dy = 140
+    plt.axis('off')
+    plt.tight_layout()
     ax.set_xlim([0,length_plot])
-    ax.set_ylim([0,110])
-    #plt.savefig("outframes/frame_{:05}.png".format(i))
-    plt.gcf().subplots_adjust(left=.08, bottom=.22, right=.95, top=.95)
-    plt.gcf().set_size_inches(width, width/2.0)
-    # plt.savefig("shear_stress_{:05}.pdf".format(i))
-    plt.savefig("stress_xy.pdf")
-    #p.set_clim([0,1])
-    #plt.close("all")
-
-for frame,i in enumerate(bindings):
-    fig = plt.figure()
-    ax = fig.add_subplot(111,aspect="equal")
-    df = full_data[i]
-    patch_list=[]
-    #plt.plot([])
-    #plt.scatter(df["coord_x"],df["coord_y"],c="b")
-    for a_x, a_y,lx,ly,damage in zip(df["coord_x"],
-                                     df["coord_y"],
-                                     df["lx"],
-                                     df["ly"],
-                                     df["damage"]):
-        patch = Rectangle(
-            xy=(a_x-lx/2, a_y-ly/2) ,width=lx, height=ly)
-        patch_list.append(patch)
-    p = PatchCollection(patch_list, cmap=cm.jet, alpha=1)
-    #p.set_array(df["stress_xx"]*1e-6)
-    p.set_array(df["stress_xx"]*1e-6)
-    ax.add_collection(p)
-    fig.colorbar(p,location="bottom",label= "$\sigma_{xx}$")
-
-    ax.set_xlim([0,length_plot])
-    ax.set_ylim([0,110])
-    #plt.savefig("outframes/frame_{:05}.png".format(i))
-    plt.gcf().subplots_adjust(left=.08, bottom=.22, right=.95, top=.95)
-    plt.gcf().set_size_inches(width, width/2.0)
-    plt.savefig("stress_xx_{:05}.pdf".format(frame))
+    ax.set_ylim([0,dy])
+    plt.gcf().subplots_adjust(left=.00, bottom=.00, right=1.00, top=1.00)
+    plt.gcf().set_size_inches(width, width * (dy/dx))
+    plt.savefig("geometry{:05}.pdf".format(frame))
     #p.set_clim([0,1])
     #plt.close("all")
 

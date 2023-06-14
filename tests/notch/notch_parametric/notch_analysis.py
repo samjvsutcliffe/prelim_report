@@ -21,7 +21,7 @@ plt.rc('axes', labelsize=8)
 # width as measured in inkscape
 width = 3.487
 height = width / 1.618
-ice_length = 8000
+ice_length = 4000
 
 output_dir = "./output_notch/"
 
@@ -90,8 +90,7 @@ plt.gcf().set_size_inches(width, height)
 if PDF_OUTPUT:
     plt.savefig("bench_stress.pdf")
 plt.figure(2)
-#data = [734, 509 , 320 , 248 , 219 , 213]#10mpa
-data = [2175, 1370, 840, 680, 620, 585]
+data = [2175,1370,840,680,620,585]
 lengths = [0,10,25,50,75,100]
 plt.plot(lengths,data,"-o",label="2D Mosbeux")
 plt.legend()
