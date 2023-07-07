@@ -25,14 +25,15 @@ height = width / 1.618
 
 ice_height = 600
 
-water_height = 0
+water_height = 200
 
 plt.close("all")
 output_dir = "./output/"
 files = os.listdir(output_dir)
-finalcsv = re.compile("sim.*.csv")
+finalcsv = re.compile("sim.*\.csv")
 files_csvs = list(filter(finalcsv.match,files))
-dt = 0.5e0
+print("files: {}".format(files_csvs))
+dt = 10e0
 time = []
 max_stress = []
 damage = []
@@ -47,8 +48,8 @@ for i,dname in enumerate(files_csvs):
 
 subprocess.run("rm ./outframes/*", shell=True)
 
-xlim = [0,1600]
-ylim = [0,700]
+xlim = [0,2000]
+ylim = [0,500]
 
 fig = plt.figure(figsize=(16,9),dpi=200)
 for frame,i in enumerate(range(len(full_data))):
@@ -78,7 +79,7 @@ for frame,i in enumerate(range(len(full_data))):
 
     ax.set_xlim(xlim)
     ax.set_ylim(ylim)
-    plt.title("t = {}s".format(i * 500))
+    plt.title("t = {}s".format(i * dt))
     plt.savefig("outframes/frame_{:05}.png".format(i))
     #plt.gcf().subplots_adjust(left=.15, bottom=.16, right=.99, top=.97)
     #plt.gcf().set_size_inches(width, height)
