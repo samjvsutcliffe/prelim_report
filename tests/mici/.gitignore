@@ -1,2 +1,3 @@
 output/sim*.csv
+output_200/
 outframes/*
