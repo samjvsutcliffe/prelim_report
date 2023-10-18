@@ -21,7 +21,7 @@ data = pd.read_csv("load-disp.csv")
 mpm = pd.read_csv("output/disp.csv")
 
 plt.figure()
-#plt.gcf().subplots_adjust(left=.15, bottom=.16, right=.99, top=.97)
+plt.gcf().subplots_adjust(left=.15, bottom=.16, right=.99, top=.97)
 plt.gcf().set_size_inches(width, height)
 plt.plot(data["disp"],data["load"],label="Experimental")
 plt.plot(-1e3 * mpm["disp"],0.1 * mpm["load"],label="MPM")
